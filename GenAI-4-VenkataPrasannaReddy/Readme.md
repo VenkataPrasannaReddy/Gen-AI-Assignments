@@ -1,0 +1,1 @@
+This is a simple README file for the GenAI-4-VenkataPrasannaReddy project.
