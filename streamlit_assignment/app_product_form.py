@@ -1,7 +1,9 @@
 import streamlit as st
 
 st.title("Product Form")
-product=st.sidebar.text_input(label="Enter the product name",placeholder="Please enter your text here...")
-category=st.sidebar.selectbox(label="Category",options=["Fashion","Electronics","Beauty","Home Appliances","Kitchen Essential"])
-if st.sidebar.button("Add Product"):
-    st.sidebar.success(f"{product} product added into {category} category")
+with st.sidebar.form("product_form"):
+    product_name=st.text_input(label="Product Name",placeholder="Please enter your text here...")
+    category=st.selectbox(label="Category",options=["Fashion","Electronics","Beauty","Home Appliances","Kitchen Essential"])
+    price=st.number_input(label="Price",min_value=0.0,step=1000.0)
+    if st.form_submit_button("Add Product"):
+        st.success(f"{product_name} product added into {category} category")

@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("Price Calculator")
 price=st.number_input("Enter the product price")
-discount=st.slider("Discount",0,100)
+discount=st.slider("Discount",0,50)
 discounted_price=0
 if st.button("Check Discounted Price"):
     discounted_price=price*(1-discount/100)
