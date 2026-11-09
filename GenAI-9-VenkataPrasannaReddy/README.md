@@ -1,0 +1,1 @@
+In this Assignment I have perfomed numpy related tasks. The solutions for this assignment are implemented in jupyter notebook. To run just click on the Run All option or can also run by clicking on run of individual cell.
